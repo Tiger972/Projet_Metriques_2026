@@ -1,0 +1,126 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Contact</title>
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+
+    body {
+      font-family: system-ui, -apple-system, sans-serif;
+      min-height: 100vh;
+      background: linear-gradient(135deg, #0f0c29, #302b63, #24243e);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .card {
+      background: rgba(255,255,255,0.05);
+      backdrop-filter: blur(12px);
+      border: 1px solid rgba(255,255,255,0.1);
+      border-radius: 16px;
+      padding: 48px 40px;
+      width: 100%;
+      max-width: 480px;
+      color: #fff;
+    }
+
+    h1 {
+      font-size: 1.8rem;
+      margin-bottom: 8px;
+    }
+
+    p.subtitle {
+      color: rgba(255,255,255,0.5);
+      font-size: 0.95rem;
+      margin-bottom: 32px;
+    }
+
+    .row {
+      display: flex;
+      gap: 16px;
+    }
+
+    .field {
+      display: flex;
+      flex-direction: column;
+      margin-bottom: 20px;
+      flex: 1;
+    }
+
+    label {
+      font-size: 0.85rem;
+      color: rgba(255,255,255,0.6);
+      margin-bottom: 6px;
+    }
+
+    input, textarea {
+      background: rgba(255,255,255,0.08);
+      border: 1px solid rgba(255,255,255,0.15);
+      border-radius: 8px;
+      padding: 12px 14px;
+      color: #fff;
+      font-size: 0.95rem;
+      outline: none;
+      transition: border 0.2s;
+      font-family: inherit;
+    }
+
+    input:focus, textarea:focus {
+      border-color: #7c6ffb;
+    }
+
+    textarea {
+      resize: vertical;
+      min-height: 120px;
+    }
+
+    button {
+      width: 100%;
+      padding: 14px;
+      background: linear-gradient(135deg, #7c6ffb, #5a4fcf);
+      border: none;
+      border-radius: 8px;
+      color: #fff;
+      font-size: 1rem;
+      font-weight: 600;
+      cursor: pointer;
+      transition: opacity 0.2s;
+      margin-top: 8px;
+    }
+
+    button:hover { opacity: 0.85; }
+  </style>
+</head>
+<body>
+  <div class="card">
+    <h1>Contactez-moi</h1>
+    <p class="subtitle">Laissez-moi un message, je vous répondrai rapidement.</p>
+
+    <div class="row">
+      <div class="field">
+        <label>Prénom</label>
+        <input type="text" placeholder="Jean" />
+      </div>
+      <div class="field">
+        <label>Nom</label>
+        <input type="text" placeholder="Dupont" />
+      </div>
+    </div>
+
+    <div class="field">
+      <label>Email</label>
+      <input type="email" placeholder="jean.dupont@email.com" />
+    </div>
+
+    <div class="field">
+      <label>Message</label>
+      <textarea placeholder="Votre message..."></textarea>
+    </div>
+
+    <button type="button">Envoyer le message</button>
+  </div>
+</body>
+</html>
